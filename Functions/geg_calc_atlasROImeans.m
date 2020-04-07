@@ -30,7 +30,7 @@ average = zeros(numel(Vdata),numel(ParcAtlasIds));
 snames = cell(numel(Vdata),1);
 
 [~,nam,~] = spm_fileparts(Vmask.fname);
-tots_xls = fullfile(opth,['w',nam, '_ROItots.xls']);
+tots_xls = fullfile(opth,['w',nam, '_ROItots.xlsx']);
 xlswrite(tots_xls,['SubjID', ParcAtlasNames'],'ROItotals','A1')
 
 for k=1:numel(ParcAtlasIds)
